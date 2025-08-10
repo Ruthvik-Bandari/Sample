@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalanche Enterprises - Contact</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #5c8c5c; /* "Nado Green" */
+        }
+        /* Custom glossy gradient for a clean, modern feel */
+        .glossy-gradient-bg {
+            background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        /* Gradient for text */
+        .text-gradient {
+            background: linear-gradient(90deg, #d4af37, #e0c25b); /* Gold gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glossy-card {
+            position: relative;
+        }
+        .glossy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+            opacity: 0.7;
+            z-index: 1;
+            pointer-events: none;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body class="p-0 sm:p-0">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm shadow-sm z-50">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 rounded-b-xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 text-gradient">Avalanche Enterprises</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-green-600 transition-colors">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-green-600 transition-colors">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 transition-colors">Contact Us</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="min-h-screen pt-20 flex items-center justify-center">
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 px-4 sm:px-8 w-full">
+            <div class="max-w-4xl mx-auto text-center bg-white p-10 rounded-3xl shadow-xl glossy-card">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-gradient mb-8">
+                    Contact Us
+                </h2>
+                <p class="text-lg text-gray-600 mb-12">
+                    Need technical support for your printing press? Get in touch with us today!
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <!-- Contact Information -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Details</h3>
+                        <div class="text-gray-600">
+                            <span class="font-semibold text-green-600">Address:</span> 6-3-2270, C764, NGO's Colony, Vanasthalipuram, Opposite IDBI Bank, Govt Hospital Road, L.B. Nagar, Hyderabad, Telangana, 500070.
+                        </div>
+                        <div class="text-gray-600">
+                            <span class="font-semibold text-green-600">Phone:</span> +91 8143327679
+                        </div>
+                        <div class="text-gray-600">
+                            <span class="font-semibold text-green-600">Email:</span> avalancheenterprises2003@gmail.com
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Request a Service</h3>
+                        <form class="space-y-4" id="contactForm">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full bg-gray-100 text-gray-900 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:border-green-400">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full bg-gray-100 text-gray-900 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:border-green-400">
+                            </div>
+                            <div>
+                                <textarea rows="4" placeholder="Your Service Request Details" class="w-full bg-gray-100 text-gray-900 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:border-green-400"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-green-500 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:bg-green-600 glossy-gradient-bg">
+                                Submit Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 text-sm bg-white bg-opacity-80 backdrop-blur-sm shadow-inner rounded-t-3xl mt-8">
+        <p>&copy; 2003 Avalanche Enterprises. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

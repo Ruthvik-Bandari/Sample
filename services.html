@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalanche Enterprises - Services</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #5c8c5c; /* "Nado Green" */
+        }
+        /* Custom glossy gradient for a clean, modern feel */
+        .glossy-gradient-bg {
+            background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        /* Gradient for text */
+        .text-gradient {
+            background: linear-gradient(90deg, #d4af37, #e0c25b); /* Gold gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glossy-card {
+            position: relative;
+        }
+        .glossy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+            opacity: 0.7;
+            z-index: 1;
+            pointer-events: none;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body class="p-0 sm:p-0">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm shadow-sm z-50">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 rounded-b-xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 text-gradient">Avalanche Enterprises</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-green-600 transition-colors">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-green-600 transition-colors">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 transition-colors">Contact Us</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="min-h-screen pt-20">
+        <!-- Services Section -->
+        <section id="services" class="py-20 px-4 sm:px-8">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-16">
+                    <span class="text-gradient">Our Technical Expertise</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 glossy-card">
+                        <div class="text-4xl text-green-600 mb-4">⚙️</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">PLC & Automation Services</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We provide comprehensive services for Programmable Logic Controllers (PLCs), including programming, fault diagnosis, and system integration to optimize your printing machinery.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 glossy-card">
+                        <div class="text-4xl text-green-600 mb-4">⚡</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Electrical System Diagnostics</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our team of experts specializes in troubleshooting and repairing complex electrical and electronic components, ensuring maximum uptime and efficiency for your printing presses.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 glossy-card">
+                        <div class="text-4xl text-green-600 mb-4">🔧</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Component Repair & Maintenance</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            From circuit board repairs to routine maintenance, we provide end-to-end technical support to extend the lifespan of your critical electronic components and prevent future failures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 text-sm bg-white bg-opacity-80 backdrop-blur-sm shadow-inner rounded-t-3xl mt-8">
+        <p>&copy; 2003 Avalanche Enterprises. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
